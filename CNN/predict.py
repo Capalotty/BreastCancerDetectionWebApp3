@@ -8,7 +8,7 @@ import tensorflow as tf
 imag=cv2.imread(os.getcwd() +'/CNN/data/benign/benign (1).png')
 img_from_ar = Image.fromarray(imag, 'RGB')
 resized_image = img_from_ar.resize((50, 50))
-
+     
 test_image =np.expand_dims(resized_image, axis=0) 
 
 # load model
